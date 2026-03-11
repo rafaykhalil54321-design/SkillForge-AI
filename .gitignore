@@ -1,0 +1,15 @@
+# Node Modules aur Next.js Cache
+node_modules/
+.next/
+out/
+build/
+
+# Python Virtual Environment
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Environment Variables (Security ke liye)
+.env
+.env.local
