@@ -8,7 +8,7 @@ import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
 // --- CENTRALIZED API URL FOR EASY DEPLOYMENT ---
 // Jab aap backend deploy karein, to Vercel ke environment variables mein NEXT_PUBLIC_API_URL daal dein.
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://rafaykhalil-skillforge-backend.hf.space/api';
 
 export default function Home() {
   const router = useRouter();
