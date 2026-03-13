@@ -16,6 +16,11 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
 
+// --- UPTIMEROBOT KO GREEN SIGNAL DENE KE LIYE ROUTE (NEW ✨) ---
+app.get('/', (req, res) => {
+    res.status(200).send('SkillForge Backend is Alive and Awake!');
+});
+
 // --- YOUR MAGIC CLOUD DATABASE LINK ---
 const MONGO_URI = "mongodb://rafay_user:RAFAYKHALIL12345@ac-cdztph2-shard-00-00.fvgtphf.mongodb.net:27017,ac-cdztph2-shard-00-01.fvgtphf.mongodb.net:27017,ac-cdztph2-shard-00-02.fvgtphf.mongodb.net:27017/skillforge?ssl=true&authSource=admin&retryWrites=true&w=majority";
 

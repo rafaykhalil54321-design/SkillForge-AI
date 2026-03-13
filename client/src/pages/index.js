@@ -7,8 +7,8 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
 // --- CENTRALIZED API URL FOR EASY DEPLOYMENT ---
-// Jab aap backend deploy karein, to Vercel ke environment variables mein NEXT_PUBLIC_API_URL daal dein.
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://rafaykhalil-skillforge-backend.hf.space/api';
+// Yahan se aakhir wala '/api' hata diya hai taake double na ho jaye
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://rafaykhalil-skillforge-backend.hf.space';
 
 export default function Home() {
   const router = useRouter();
@@ -18,7 +18,7 @@ export default function Home() {
 
   // Profile States
   const [profilePic, setProfilePic] = useState(null);
-  const [displayName, setDisplayName] = useState('Demo User'); // Generic name for portfolio
+  const [displayName, setDisplayName] = useState('Rafay Khalil'); 
   
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
@@ -603,7 +603,7 @@ export default function Home() {
                             <Mail size={14}/> Registered Email
                           </label>
                           {/* GENERIC DEMO EMAIL */}
-                          <input type="email" value="demo@skillforge.ai" disabled className="w-full p-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-500 cursor-not-allowed" />
+                          <input type="email" value="ka097799@gmail.com" disabled className="w-full p-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-500 cursor-not-allowed" />
                           <p className="text-xs text-slate-400 mt-1.5">Email address cannot be changed for this account.</p>
                         </div>
                      </div>
